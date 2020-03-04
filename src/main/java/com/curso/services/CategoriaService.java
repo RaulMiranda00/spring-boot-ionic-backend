@@ -10,6 +10,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import com.curso.domain.Categoria;
+import com.curso.dto.CategoriaDTO;
 import com.curso.repositories.CategoriaRepository;
 import com.curso.services.exceptions.DataIntegrityException;
 import com.curso.services.exceptions.ObjectNotFoundException;
@@ -60,5 +61,8 @@ public class CategoriaService {
 		
 	}
 	
+	public Categoria fromDTO(CategoriaDTO objDTO) {
+		return new Categoria(objDTO.getId(), objDTO.getNome());
+	}
 	
 }
