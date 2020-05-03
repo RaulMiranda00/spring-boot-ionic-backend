@@ -85,7 +85,6 @@ public class Produto implements Serializable {
 	public void setPreço(Double preco) {
 		this.preco = preco;
 	}
-
 	public List<Categoria> getCategorias() {
 		return categorias;
 	}
