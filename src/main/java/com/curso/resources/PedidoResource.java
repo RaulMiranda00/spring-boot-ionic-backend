@@ -1,7 +1,6 @@
 package com.curso.resources;
 
 import java.net.URI;
-import java.util.List;
 
 import javax.validation.Valid;
 
